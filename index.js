@@ -27,19 +27,14 @@ module.exports = {
      * unicorn?
      * array-func
      * immutable? fp? pretty restrictive
-     * filenames
      */
   ],
 
   // http://eslint.org/docs/user-guide/configuring#extending-configuration-files
   extends: [
-    /*
-     * 'plugin:compat/recommended',
-     * 'plugin:eslint-comments/recommended',
-     */
-
     './rules/eslint/index.js',
     './rules/eslint-comments/index.js',
+    './rules/filenames/index.js',
     './rules/import/index.js',
     './rules/jsx-a11y/index.js',
     './rules/react/index.js',
