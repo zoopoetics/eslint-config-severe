@@ -23,8 +23,6 @@ module.exports = {
     /*
      * 'compat',
      * 'deprecate',
-     * 'import',
-     * 'xss',
      * jest
      * unicorn?
      * array-func
@@ -38,10 +36,10 @@ module.exports = {
     /*
      * 'plugin:compat/recommended',
      * 'plugin:eslint-comments/recommended',
-     * 'plugin:import/errors',
      */
 
     './rules/eslint/index.js',
+    './rules/import/index.js',
     './rules/jsx-a11y/index.js',
     './rules/react/index.js',
 
