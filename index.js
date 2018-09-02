@@ -37,12 +37,12 @@ module.exports = {
   // http://eslint.org/docs/user-guide/configuring#extending-configuration-files
   extends: [
     require.resolve('./rules/eslint/index.js'),
+    require.resolve('./rules/jsx-a11y/index.js'),
     require.resolve('./rules/react/index.js'),
     /*
      * 'plugin:compat/recommended',
      * 'plugin:eslint-comments/recommended',
      * 'plugin:import/errors',
-     * 'plugin:jsx-a11y/recommended',
      */
 
     'prettier',
