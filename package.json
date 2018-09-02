@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-zoopoetics",
+  "name": "eslint-config-severe",
   "version": "0.1.0",
   "description": "Reusable linting rules.",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zoopoetics/eslint-config-zoopoetics.git"
+    "url": "git+https://github.com/zoopoetics/eslint-config-severe.git"
   },
   "author": "Peter Barker",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zoopoetics/eslint-config-zoopoetics/issues"
+    "url": "https://github.com/zoopoetics/eslint-config-severe/issues"
   },
-  "homepage": "https://github.com/zoopoetics/eslint-config-zoopoetics#readme",
+  "homepage": "https://github.com/zoopoetics/eslint-config-severe#readme",
   "devDependencies": {
     "babel-eslint": "9.0.0",
     "eslint": "5.4.0",

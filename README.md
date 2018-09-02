@@ -1,2 +1,3 @@
-# eslint-config-zoopoetics
+# eslint-config-severe
+
 Reusable linting rules.
