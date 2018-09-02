@@ -18,17 +18,6 @@ module.exports = {
     sourceType: 'module',
   },
 
-  // http://eslint.org/docs/user-guide/configuring#configuring-plugins
-  plugins: [
-    /*
-     * 'compat',
-     * 'deprecate',
-     * jest
-     * unicorn?
-     * immutable? fp? pretty restrictive
-     */
-  ],
-
   // http://eslint.org/docs/user-guide/configuring#extending-configuration-files
   extends: [
     './rules/array-func/index.js',
