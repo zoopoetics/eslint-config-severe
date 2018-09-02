@@ -8,7 +8,6 @@ module.exports = {
     'import/extensions': 0,
     'import/first': 'error',
     'import/group-exports': 'error',
-    'imports/first': 'error',
     'import/max-dependencies': 'error',
     'import/named': 'error',
     'import/namespace': 'error',

@@ -39,6 +39,7 @@ module.exports = {
      */
 
     './rules/eslint/index.js',
+    './rules/eslint-comments/index.js',
     './rules/import/index.js',
     './rules/jsx-a11y/index.js',
     './rules/react/index.js',
