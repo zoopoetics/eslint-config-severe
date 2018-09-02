@@ -37,6 +37,7 @@ module.exports = {
     './rules/filenames/index.js',
     './rules/import/index.js',
     './rules/jsx-a11y/index.js',
+    './rules/promise/index.js',
     './rules/react/index.js',
 
     // Prettier overrides must come last
