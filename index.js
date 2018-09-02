@@ -25,13 +25,13 @@ module.exports = {
      * 'deprecate',
      * jest
      * unicorn?
-     * array-func
      * immutable? fp? pretty restrictive
      */
   ],
 
   // http://eslint.org/docs/user-guide/configuring#extending-configuration-files
   extends: [
+    './rules/array-func/index.js',
     './rules/eslint/index.js',
     './rules/eslint-comments/index.js',
     './rules/filenames/index.js',
