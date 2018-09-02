@@ -24,7 +24,6 @@ module.exports = {
      * 'compat',
      * 'deprecate',
      * 'import',
-     * 'jsx-a11y',
      * 'xss',
      * jest
      * unicorn?
@@ -36,16 +35,17 @@ module.exports = {
 
   // http://eslint.org/docs/user-guide/configuring#extending-configuration-files
   extends: [
-    require.resolve('./rules/eslint/index.js'),
-    require.resolve('./rules/jsx-a11y/index.js'),
-    require.resolve('./rules/react/index.js'),
     /*
      * 'plugin:compat/recommended',
      * 'plugin:eslint-comments/recommended',
      * 'plugin:import/errors',
      */
 
-    'prettier',
-    'prettier/react',
-  ],
+    './rules/eslint/index.js',
+    './rules/jsx-a11y/index.js',
+    './rules/react/index.js',
+
+    // Prettier overrides must come last
+    './rules/prettier/index.js',
+  ].map(require.resolve),
 };

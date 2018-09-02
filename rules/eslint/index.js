@@ -1,5 +1,6 @@
 module.exports = {
   extends: [
+    // eslint:recommended must come first
     'eslint:recommended',
     require.resolve('./best-practices.js'),
     require.resolve('./es6.js'),
