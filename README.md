@@ -19,10 +19,10 @@ You probably don't need this. It's my preferred JS linting configuration for Rea
 
 ## Installation
 
-`eslint-config-severe` is intended to be installed from NPM and then configured into a React app.
+`eslint-config-severe` is intended to be installed from NPM and then configured into a React app. Due to limitations imposed by ESLint, its dependencies are peer dependencies and must be installed as such.
 
 ```
-yarn add --dev eslint-config-severe
+yarn add --dev eslint-config-severe eslint-config-prettier eslint-plugin-array-func eslint-plugin-eslint-comments eslint-plugin-filenames eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-lean-imports eslint-plugin-promise eslint-plugin-react
 ```
 
 Then in the root of your project, create an `.eslintrc.js` file containing this:

@@ -1,22 +1,27 @@
 {
   "name": "eslint-config-severe",
-  "version": "0.1.0",
-  "description": "Reusable linting rules.",
-  "main": "index.js",
-  "scripts": {
-    "test": "eslint ./test"
+  "version": "0.1.2",
+  "description": "Severe, reusable config for ESLint.",
+  "keywords": "eslint eslintconfig",
+  "license": "MIT",
+  "homepage": "https://github.com/zoopoetics/eslint-config-severe#readme",
+  "bugs": {
+    "url": "https://github.com/zoopoetics/eslint-config-severe/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zoopoetics/eslint-config-severe.git"
   },
-  "author": "Peter Barker",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zoopoetics/eslint-config-severe/issues"
+  "author": "Peter Barker http://zoopoetics.com",
+  "files": [
+    "index.js",
+    "rules/"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ./test"
   },
-  "homepage": "https://github.com/zoopoetics/eslint-config-severe#readme",
-  "devDependencies": {
+  "peerDependencies": {
     "babel-eslint": "9.0.0",
     "eslint": "5.5.0",
     "eslint-config-prettier": "3.0.1",
@@ -27,7 +32,6 @@
     "eslint-plugin-jsx-a11y": "6.1.1",
     "eslint-plugin-lean-imports": "0.3.3",
     "eslint-plugin-promise": "4.0.0",
-    "eslint-plugin-react": "7.11.1",
-    "prettier": "1.14.2"
+    "eslint-plugin-react": "7.11.1"
   }
 }
