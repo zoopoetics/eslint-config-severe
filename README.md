@@ -1,6 +1,6 @@
 ## What is this?
 
-A reusable ESLint configuration that incorporates the following:
+An implacably harsh ESLint configuration that incorporates the following:
 
 - [ESLint core rules](https://eslint.org/docs/rules/)
 - [`eslint-plugin-array-func`](https://github.com/freaktechnik/eslint-plugin-array-func)
@@ -15,17 +15,17 @@ A reusable ESLint configuration that incorporates the following:
 
 ## What problem does it solve?
 
-You probably don't need this. It's my preferred JS linting configuration for React projects, and I publish it to NPM so that it's easy to reuse across projects. It's severe because it enables almost every rule from the above packages. If Werner Herzog himself were to configure a linter, this is how severe it would be.
+You probably don't need this. It's my preferred JS linting configuration for React projects, and I publish it to NPM so that it's easy to reuse across projects. It's severe because it enables most rules from the above packages. If Werner Herzog himself were to configure a linter, this is how severe it would be.
 
 ## Installation
 
-`eslint-config-severe` is intended to be installed from NPM and then configured into a React app. Due to limitations imposed by ESLint, its dependencies are peer dependencies and must be installed as such.
+`eslint-config-severe` is intended to be installed from NPM and then configured into a React project. Due to limitations imposed by ESLint, its dependencies are peer dependencies and must be installed explicitly by any project that makes use of `severe`.
 
 ```
-yarn add --dev eslint-config-severe eslint-config-prettier eslint-plugin-array-func eslint-plugin-eslint-comments eslint-plugin-filenames eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-lean-imports eslint-plugin-promise eslint-plugin-react
+yarn add babel-eslint eslint-config-severe eslint-config-prettier eslint-plugin-array-func eslint-plugin-eslint-comments eslint-plugin-filenames eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-lean-imports eslint-plugin-promise eslint-plugin-react
 ```
 
-Then in the root of your project, create an `.eslintrc.js` file containing this:
+Once installation is complete, in the root of your project, create an `.eslintrc.js` file containing this:
 
 ```
 module.exports = {
@@ -33,8 +33,8 @@ module.exports = {
 };
 ```
 
-Of course, there you can add whatever other configuration items you want. You can include other plugins, for example, or override any of the rules coming from `severe`. If you're not sure how that works, check out the [ESLint configuration docs](https://eslint.org/docs/user-guide/configuring).
+Of course, in `.eslintrc.js` you can add whatever other configuration items you want. You can include other plugins, for example, or override any of the rules coming from `severe`. If you're not sure how this works, check out the [ESLint configuration docs](https://eslint.org/docs/user-guide/configuring).
 
 ## Usage
 
-I write code in Atom, and I configure the `atom-prettier` package to run Prettier and then ESLint every time I hit save. This works well enough for me, but of course there are many other ways to do it.
+I write code in Atom, and I configure the `atom-prettier` package to run Prettier and then ESLint every time I hit save. This works well enough for me, but of course there are many other ways to do it. Perhaps you prefer some other one. Merry linting!
