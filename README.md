@@ -1,12 +1,13 @@
 ## What is this?
 
-An implacably harsh ESLint configuration that incorporates the following:
+An unrelentingly harsh ESLint configuration that incorporates the following:
 
 - [ESLint core rules](https://eslint.org/docs/rules/)
 - [`eslint-plugin-array-func`](https://github.com/freaktechnik/eslint-plugin-array-func)
 - [`eslint-plugin-eslint-comments`](https://github.com/mysticatea/eslint-plugin-eslint-comments)
 - [`eslint-plugin-filenames`](https://github.com/selaux/eslint-plugin-filenames)
 - [`eslint-plugin-import`](https://github.com/benmosher/eslint-plugin-import)
+- [`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest)
 - [`eslint-plugin-jsx-a11y`](https://github.com/evcohen/eslint-plugin-jsx-a11y)
 - [`eslint-plugin-lean-imports`](https://github.com/eslint-plugins/eslint-plugin-lean-imports)
 - [`eslint-plugin-prettier`](https://github.com/prettier/eslint-plugin-prettier)
@@ -15,14 +16,14 @@ An implacably harsh ESLint configuration that incorporates the following:
 
 ## What problem does it solve?
 
-You probably don't need this. It's my preferred JS linting configuration for React projects, and I publish it to NPM so that it's easy to reuse across projects. It's severe because it enables most rules from the above packages. If Werner Herzog himself were to configure a linter, this is how severe it would be.
+You probably don't need this. It's a maximally severe linting setup that enables most of the rules defined by ESLint, along with those rules defined by the above plugins. It helps when collaborators who have minimal experience with JS come crashing into your code and you just need to automate some best practices and consistent styling.
 
 ## Installation
 
-`eslint-config-severe` is intended to be installed from NPM and then configured into a React project. Due to limitations imposed by ESLint, its dependencies are peer dependencies and must be installed explicitly by any project that makes use of `severe`.
+`eslint-config-severe` is intended to be installed from NPM and then configured into a React project. Its dependencies are peer dependencies and must be installed explicitly in the project where you're using it.
 
 ```
-yarn add babel-eslint eslint-config-severe eslint-config-prettier eslint-plugin-array-func eslint-plugin-eslint-comments eslint-plugin-filenames eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-lean-imports eslint-plugin-promise eslint-plugin-react
+yarn add eslint-config-severe babel-eslint eslint eslint-config-prettier eslint-plugin-array-func eslint-plugin-eslint-comments eslint-plugin-filenames eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-lean-imports eslint-plugin-promise eslint-plugin-react
 ```
 
 Once installation is complete, in the root of your project, create an `.eslintrc.js` file containing this:
