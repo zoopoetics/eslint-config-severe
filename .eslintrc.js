@@ -20,11 +20,14 @@ module.exports = {
 
   // http://eslint.org/docs/user-guide/configuring#extending-configuration-files
   extends: [
+    './rules/array-func/index.js',
     './rules/eslint/index.js',
     './rules/eslint-comments/index.js',
     './rules/filenames/index.js',
     './rules/import/index.js',
+    './rules/jest/index.js',
     './rules/jsx-a11y/index.js',
+    './rules/lean-imports/index.js',
     './rules/promise/index.js',
     './rules/react/index.js',
 

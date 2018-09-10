@@ -16,7 +16,7 @@ An unrelentingly harsh ESLint configuration that incorporates the following:
 
 ## What problem does it solve?
 
-You probably don't need this. It's a maximally severe linting setup that enables most of the rules defined by ESLint, along with those rules defined by the above plugins. It helps when collaborators who have minimal experience with JS come crashing into your code and you just need to automate some best practices and consistent styling.
+You probably don't need this. It's a maximally severe linting setup that enables most of the rules defined by ESLint, along with those rules defined by the above plugins. It helps when collaborators who have minimal experience with JS come crashing into your code and you find yourself with an urgent need to automate some good practices and consistent formatting.
 
 ## Installation
 
