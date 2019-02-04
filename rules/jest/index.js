@@ -3,7 +3,7 @@ module.exports = {
   rules: {
     'jest/consistent-test-it': ['error', {fn: 'it'}],
     'jest/expect-expect': 'error',
-    'jest/lowercase-name': 'error',
+    'jest/lowercase-name': 0,
     'jest/no-disabled-tests': 'warn',
     'jest/no-focused-tests': 'warn',
     'jest/no-hooks': 0,
