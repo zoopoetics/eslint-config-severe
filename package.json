@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-severe",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Severe, reusable config for ESLint.",
   "keywords": "eslint eslintconfig",
   "license": "MIT",
