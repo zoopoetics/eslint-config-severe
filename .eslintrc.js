@@ -7,18 +7,6 @@ module.exports = {
     node: true,
   },
 
-  // http://eslint.org/docs/user-guide/configuring#specifying-parser
-  parser: 'babel-eslint',
-
-  // http://eslint.org/docs/user-guide/configuring#specifying-parser-options
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: 2018,
-    sourceType: 'module',
-  },
-
   // http://eslint.org/docs/user-guide/configuring#extending-configuration-files
   extends: [
     './rules/array-func/index.js',
@@ -35,4 +23,23 @@ module.exports = {
     // Prettier overrides come last
     './rules/prettier/index.js',
   ],
+
+  // http://eslint.org/docs/user-guide/configuring#specifying-parser
+  parser: 'babel-eslint',
+
+  // http://eslint.org/docs/user-guide/configuring#specifying-parser-options
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+
+  // https://eslint.org/docs/user-guide/configuring#adding-shared-settings
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 };
